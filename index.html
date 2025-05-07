@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Poshaakh - Grace in Every Thread</title>
   <style>
+    html {
+      scroll-behavior: smooth;
+    }
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
       background-color: white;
       color: #d63384;
+      animation: fadeInBody 1s ease-in;
+    }
+    @keyframes fadeInBody {
+      from { opacity: 0; }
+      to { opacity: 1; }
     }
     header, footer {
       text-align: center;
@@ -18,10 +26,26 @@
     header img {
       max-width: 150px;
       margin-bottom: 1rem;
+      animation: slideDown 1s ease-out;
+    }
+    @keyframes slideDown {
+      from {
+        opacity: 0;
+        transform: translateY(-20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
     header h1 {
       font-size: 2.5rem;
       margin-bottom: 0.5rem;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
     header p {
       font-size: 1.2rem;
@@ -34,6 +58,10 @@
       text-decoration: none;
       border-radius: 25px;
       font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #b91d6e;
     }
     section {
       padding: 2rem 1rem;
@@ -42,13 +70,19 @@
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
+      gap: 1.5rem;
       max-width: 1000px;
       margin: 0 auto;
     }
     .grid img {
       width: 100%;
       border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
     .about, .testimonials {
       max-width: 800px;
@@ -56,6 +90,7 @@
     }
     footer p {
       margin: 0.25rem 0;
+      font-size: 0.95rem;
     }
     .cta-buttons a {
       margin: 0.5rem;
