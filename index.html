@@ -111,15 +111,14 @@
       padding: 2rem 1rem;
       text-align: center;
     }
-    .grid img {
+ .grid img {
   width: 100%;
-  height: auto;
-  max-width: 100%;
+  height: 350px; /* Fixed height */
+  object-fit: cover; /* Crops excess and keeps layout consistent */
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
     .about, .testimonials {
       max-width: 800px;
       margin: 0 auto;
