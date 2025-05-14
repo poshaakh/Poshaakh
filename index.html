@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   <title>Poshaakh – Lucknowi & Chikankari Suits in Jogeshwari, Mumbai</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <!-- SEO Meta -->
   <meta name="description" content="Shop original Lucknowi Chikankari suits, kurtis & ethnic wear at Poshaakh, Jogeshwari. Authentic handcrafted fashion delivered across Mumbai & India.">
@@ -168,12 +169,31 @@
 }
 
 .cta-buttons a {
-  flex: 1 1 45%;
-  max-width: 200px;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex: 1 1 100%;
+  max-width: 300px;
+  padding: 12px 20px;
+  background-color: #e83e8c;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
 }
 
+.cta-buttons a:hover {
+  background-color: #c8236f;
+}
 
+@media (min-width: 600px) {
+  .cta-buttons a {
+    flex: 1 1 45%;
+  }
+}
     .testimonials {
       max-width: 600px;
       margin: 0 auto;
@@ -275,13 +295,18 @@
     </div>
   </section>
 
-  <section>
-    <h2>Visit or Order Online</h2>
-    <div class="cta-buttons">
-      <a class="btn" href="https://wa.me/919892218187" target="_blank">Order on WhatsApp</a>
-      <a class="btn" href="https://instagram.com/designsbyposhaakh" target="_blank">Follow on Instagram</a>
-    </div>
-  </section>
+<section>
+  <h2>Visit or Order Online</h2>
+  <div class="cta-buttons">
+    <a class="btn" href="https://wa.me/919892218187" target="_blank">
+      <i class="fab fa-whatsapp"></i> Order on WhatsApp
+    </a>
+    <a class="btn" href="https://instagram.com/designsbyposhaakh" target="_blank">
+      <i class="fab fa-instagram"></i> Follow on Instagram
+    </a>
+  </div>
+</section>
+
 
   <footer>
     <p>&copy; 2025 Poshaakh</p>
