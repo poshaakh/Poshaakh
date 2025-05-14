@@ -24,7 +24,7 @@
     "@context": "https://schema.org",
     "@type": "ClothingStore",
     "name": "Poshaakh",
-    "image": "https://poshaakh.github.io/Poshaakh/lucknowi-kurtis-jogeshwari-poshaakh.jpg1.jpg",
+    "image": "https://poshaakh.github.io/Poshaakh/poshaakh1.webp",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Shop no-9, PEARL PLATINUM, Oshiwara Garden Road, Chandiwala",
@@ -52,7 +52,7 @@
   <!-- Open Graph (for Facebook, LinkedIn) -->
   <meta property="og:title" content="Poshaakh – Lucknowi & Chikankari Suits in Jogeshwari, Mumbai" />
   <meta property="og:description" content="Explore traditional handcrafted Lucknowi suits & kurtis at Poshaakh, Jogeshwari West. WhatsApp to order or visit us in Mumbai." />
-  <meta property="og:image" content="https://poshaakh.github.io/Poshaakh/lucknowi-kurtis-jogeshwari-poshaakh.jpg1.jpg" />
+  <meta property="og:image" content="https://poshaakh.github.io/Poshaakh/poshaakh1.webp" />
   <meta property="og:url" content="https://poshaakh.github.io/Poshaakh/" />
   <meta property="og:type" content="website" />
 
@@ -60,7 +60,7 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Poshaakh – Lucknowi & Chikankari Suits in Jogeshwari" />
   <meta name="twitter:description" content="Handmade elegance in every thread – shop Poshaakh for Chikankari suits & kurtis in Mumbai." />
-  <meta name="twitter:image" content="https://poshaakh.github.io/Poshaakh/lucknowi-kurtis-jogeshwari-poshaakh.jpg1.jpg" />
+  <meta name="twitter:image" content="https://poshaakh.github.io/Poshaakh/poshaakh1.webp" />
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap" rel="stylesheet">
@@ -111,14 +111,23 @@
       padding: 2rem 1rem;
       text-align: center;
     }
- .grid img {
-  width: 100%;
-  height: 350px; /* Fixed height */
-  object-fit: cover; /* Crops excess and keeps layout consistent */
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1.5rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .grid img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .grid img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+    }
     .about, .testimonials {
       max-width: 800px;
       margin: 0 auto;
@@ -159,8 +168,8 @@
   <section>
     <h2>New Arrivals – Lucknowi Chikankari Suits</h2>
     <div class="grid">
-      <img src="lucknowi-kurtis-jogeshwari-poshaakh.jpg1.jpg" alt="Pink Lucknowi Suit in Jogeshwari">
-      <img src="lucknowi-kurtis-jogeshwari-poshaakh.jpg" alt="Lavender Chikankari Kurti Mumbai">
+      <img src="poshaakh1.webp" alt="Pink Lucknowi Suit in Jogeshwari">
+      <img src="poshaakh2.webp" alt="Lavender Chikankari Kurti Mumbai">
       <img src="poshaakh3.webp" alt="Maroon Embroidered Suit near Jogeshwari">
     </div>
   </section>
@@ -181,17 +190,10 @@
 
   <section class="testimonials">
     <h2>Customer Reviews</h2>
-    <div class="review">
-      <p>“Beautiful Lucknowi work. Great shop in Jogeshwari!”</p>
-      <strong>– Ayesha R.</strong>
-    </div>
-    <div class="review">
-      <p>“Exactly like the photo. Fast delivery in Mumbai!”</p>
-      <strong>– Meenal S.</strong>
-    </div>
-    <div class="review">
-      <p>“Fits perfectly. Amazing stitching!”</p>
-      <strong>– Rina P.</strong>
+    <div class="testimonial-slider">
+      <p>"Beautiful Lucknowi work. Great shop in Jogeshwari!" – Ayesha R.</p>
+      <p>"Exactly like the photo. Fast delivery in Mumbai!" – Meenal S.</p>
+      <p>"Fits perfectly. Amazing stitching!" – Rina P.</p>
     </div>
   </section>
 
